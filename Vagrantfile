@@ -6,7 +6,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provider :virtualbox do |provider, override|
     override.vm.provision :shell, privileged: false, inline: <<-EOS.gsub(/^ {6}/, "")
       # Install Ruby
-      sudo apt-get install git-core
+      sudo apt-get -y install git-core
       git clone git://github.com/sstephenson/rbenv.git .rbenv
       git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
       which rbenv || echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> .bash_profile

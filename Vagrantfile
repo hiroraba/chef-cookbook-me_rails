@@ -19,7 +19,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       rbenv global 2.0.0-p195
       rbenv rehash
       
-      gem install bundler
+      sudo gem install bundler
       bundle install
     EOS
   end

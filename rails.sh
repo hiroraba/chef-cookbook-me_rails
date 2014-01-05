@@ -17,5 +17,5 @@ tar xzf rubygems-1.8.25.tgz
 cd rubygems-1.8.25
 ~/.rbenv/versions/1.9.3-p125/bin/ruby setup.rb
 
-gem install bundler
+~/.rbenv/versions/1.9.3-p125/bin/gem install bundler
 bundle install

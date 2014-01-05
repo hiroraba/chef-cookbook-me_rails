@@ -1,4 +1,4 @@
-script = < <SCRIPT
+script=<<SCRIPT
 # Install Ruby
 sudo apt-get -y install git-core
 sudo apt-get -y install libopenssl-ruby

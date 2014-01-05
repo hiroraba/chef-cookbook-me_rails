@@ -11,7 +11,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       # Install Ruby
       sudo apt-get -y install git-core
       sudo apt-get -y install rubygems
-      sudo gem update --system
       git clone git://github.com/sstephenson/rbenv.git .rbenv
       git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
       which rbenv || echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> .bash_profile
@@ -20,8 +19,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       rbenv install 2.1.0
       rbenv rehash
       rbenv global 2.1.0
-      gem install bundler
       rbenv rehash
+      gem install rubygems-update
+      ~/.rbenv/versions/2.1.0/bin/update_rubygems
 
       gem install rails --no-ri --no-rdoc -V
       rails -v

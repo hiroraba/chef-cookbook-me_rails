@@ -7,9 +7,8 @@ sudo apt-get -y install libopenssl-ruby
 
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> .bash_profile
-echo 'eval "$(rbenv init -)"' >> .bash_profile
-bash
+export PATH="$HOME/.rbenv/bin:$PATH"
+rbenv init -
 rbenv install 2.0.0-p195
 rbenv global 2.0.0-p195
 rbenv rehash

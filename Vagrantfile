@@ -16,12 +16,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       which rbenv || echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> .bash_profile
       which rbenv || echo 'eval "$(rbenv init -)"' >> .bash_profile
       source .bash_profile
-      rbenv install 2.1.0
-      rbenv rehash
-      rbenv global 2.1.0
+      rbenv install 2.0.0-p195
+      rbenv global 2.0.0-p195
       rbenv rehash
       gem install rubygems-update
-      ~/.rbenv/versions/2.1.0/bin/update_rubygems
+      ~/.rbenv/versions/2.0.0-p195/bin/update_rubygems
 
       gem install rails --no-ri --no-rdoc -V
       rails -v

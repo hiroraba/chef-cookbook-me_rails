@@ -12,7 +12,7 @@ source .bash_profile
 rbenv install 2.0.0-p195
 rbenv global 2.0.0-p195
 rbenv rehash
-sudo apt-get -y install rubygems
+sudo apt-get -y install rubygems=1.3.7
 #sudo gem install rubygems-update --no-ri --no-rdoc
 #~/.rbenv/versions/2.0.0-p195/bin/gem/update_rubygems
 

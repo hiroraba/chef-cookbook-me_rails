@@ -21,6 +21,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       rbenv rehash
       sudo apt-get -y install rubygems
       sudo gem install rubygems-update 
+      ~/.rbenv/versions/2.0.0-p195/bin/update_rubygems
       
       sudo gem install bundler
       bundle install

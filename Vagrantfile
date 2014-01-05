@@ -1,23 +1,3 @@
-script=<<SCRIPT
-# Install Ruby
-sudo apt-get -y install git-core
-sudo apt-get -y install libopenssl-ruby
-git clone git://github.com/sstephenson/rbenv.git .rbenv
-git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-which rbenv || echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> .bash_profile
-which rbenv || echo 'eval "$(rbenv init -)"' >> .bash_profile
-source .bash_profile
-rbenv install 2.0.0-p195
-rbenv global 2.0.0-p195
-rbenv rehash
-sudo apt-get -y install rubygems
-sudo gem install rubygems-update 
-~/.rbenv/versions/2.0.0-p195/bin/gem/update_rubygems
-
-sudo gem install bundler
-bundle install
-SCRIPT
-
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
@@ -26,6 +6,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   
   config.vm.synced_folder "./","/home/vagrant"
   config.vm.provider :virtualbox do |provider, override|
-    config.vm.provision :shell, :inline => script
+    config.vm.provision :shell, :path => "rails.sh"
   end
 end

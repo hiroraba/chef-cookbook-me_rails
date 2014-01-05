@@ -12,9 +12,9 @@ rbenv init -
 rbenv install 1.9.3-p125
 rbenv global 1.9.3-p125
 rbenv rehash
-wget http://rubyforge.org/frs/download.php/70696/rubygems-1.3.7.tgz
-tar xzf rubygems-1.3.7.tgz
-cd rubygems-1.3.7
+wget http://rubyforge.org/frs/download.php/76729/rubygems-1.8.25.tgz
+tar xzf rubygems-1.8.25.tgz
+cd rubygems-1.8.25
 ~/.rbenv/versions/1.9.3-p125/bin/ruby setup.rb
 
 sudo gem install bundler

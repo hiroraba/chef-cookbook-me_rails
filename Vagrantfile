@@ -19,11 +19,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       rbenv install 2.0.0-p195
       rbenv global 2.0.0-p195
       rbenv rehash
-      gem install rubygems-update
-      ~/.rbenv/versions/2.0.0-p195/bin/update_rubygems
-
-      gem install rails --no-ri --no-rdoc -V
-      rails -v
+      
+      gem install bundler
       bundle install
     EOS
   end

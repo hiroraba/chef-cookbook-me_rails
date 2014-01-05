@@ -15,7 +15,7 @@ rbenv rehash
 wget http://rubyforge.org/frs/download.php/70696/rubygems-1.3.7.tgz
 tar xzf rubygems-1.3.7.tgz
 cd rubygems-1.3.7
-ruby setup.rb
+~/.rbenv/versions/2.0.0-p195/bin/ruby setup.rb
 
 sudo gem install bundler
 bundle install

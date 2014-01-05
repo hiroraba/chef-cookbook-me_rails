@@ -6,6 +6,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   
   config.vm.synced_folder "./","/home/vagrant"
   config.vm.provider :virtualbox do |provider, override|
-    config.vm.provision :shell, :path => "rails.sh"
+    config.vm.provision :shell, :privileged => false, :path => "rails.sh"
   end
 end

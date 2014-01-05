@@ -18,6 +18,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       rbenv install 2.0.0-p195
       rbenv global 2.0.0-p195
       rbenv rehash
+      sudo apt-get -y install rubygems
+      sudo gem install rubygems-update 
       
       sudo gem install bundler
       bundle install

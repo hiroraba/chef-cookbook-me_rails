@@ -19,9 +19,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       rbenv rehash
 
       # Install Rails
-      #gem update --system
-      #gem install rails --no-ri --no-rdoc -V
-      #rails -v
+      gem update --system
+      gem install rails --no-ri --no-rdoc -V
+      rails -v
       bundle install
     EOS
   end

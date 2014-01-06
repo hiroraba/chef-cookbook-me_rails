@@ -9,7 +9,7 @@ git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 echo 'export PATH="$HOME/.rbenv/shims:$PATH"' >> ~/.bash_profile
-source ~/.bash_profile
+bash -c "source ~/.bash_profile"
 rbenv install 1.9.3-p125
 rbenv global 1.9.3-p125
 rbenv rehash

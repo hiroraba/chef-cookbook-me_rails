@@ -28,5 +28,6 @@ cd rubygems-1.8.25
 ruby setup.rb
 cd ~
 gem install bundler
+source .bash_profile
 cd Her
 bundle install

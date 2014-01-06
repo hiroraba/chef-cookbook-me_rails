@@ -21,4 +21,4 @@ git clone git@github.com:sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 wget http://rubyforge.org/frs/download.php/76729/rubygems-1.8.25.tgz
 tar xzf rubygems-1.8.25.tgz
 cd rubygems-1.8.25
-./setup.rb
+ruby setup.rb

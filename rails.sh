@@ -18,4 +18,4 @@ cd rubygems-1.8.25
 ~/.rbenv/versions/1.9.3-p125/bin/ruby setup.rb
 
 ~/.rbenv/versions/1.9.3-p125/bin/gem install bundler
-bundle install
+~/.rbenv/versions/1.9.3-p125/bin/bundle install

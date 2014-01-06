@@ -4,7 +4,10 @@
 sudo apt-get -y update
 sudo apt-get -y install git-core
 sudo apt-get -y install libopenssl-ruby
-
+sudo apt-get -y install build-essential
+sudo apt-get -y install libreadline-dev libssl-dev zlib1g-dev
+sudo apt-get -y install libssl-dev libssl1.0.0
+sudo apt-get -y install curl
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 echo 'export PATH="$HOME/.rbenv/shims:$PATH"' >> ~/.bash_profile

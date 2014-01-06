@@ -11,9 +11,8 @@ sudo apt-get -y install curl
 
 git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
 
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-bash
+export PATH="$HOME/.rbenv/bin:$PATH"
+rbenv init -
 
 git clone git://github.com/sstephenson/ruby-build.git
 cd ruby-build

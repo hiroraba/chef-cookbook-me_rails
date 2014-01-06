@@ -14,7 +14,7 @@ git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
 echo 'export RBENV_ROOT="$HOME/.rbenv"' >> ~/.bash_profile
 echo 'export PATH="$RBENV_ROOT/bin:$PATH"' >> ~/.bash_profile
 echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
-exec $SHELL -l
+source .bash_profile
 
 git clone git@github.com:sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 

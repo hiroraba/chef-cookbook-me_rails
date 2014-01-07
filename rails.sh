@@ -18,8 +18,8 @@ echo 'export PATH="$RBENV_ROOT/bin:$PATH"' >> ~/.bash_profile
 echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 source .bash_profile
 
-rbenv install 1.9.3-p125
-rbenv global 1.9.3-p125
+rbenv install 2.0.0-p0
+rbenv global 2.0.0-p0
 rbenv rehash
 
 wget http://rubyforge.org/frs/download.php/76729/rubygems-1.8.25.tgz
@@ -29,4 +29,4 @@ ruby setup.rb
 cd ../
 gem install bundler
 cd Her
-~/.rbenv/versions/1.9.3-p125/bin/bundle install
+~/.rbenv/versions/2.0.0-p0/bin/bundle install

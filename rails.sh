@@ -29,4 +29,5 @@ ruby setup.rb
 cd ../
 gem install bundler
 cd Her
-~/.rbenv/versions/2.0.0-p0/bin/bundle install
+bundle install
+bundle exec rspec spec

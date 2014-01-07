@@ -10,6 +10,7 @@ sudo apt-get -y install libreadline-dev libssl-dev zlib1g-dev
 sudo apt-get -y install libssl-dev libssl1.0.0
 sudo apt-get -y install curl
 sudo apt-get -y install libpq-dev
+sudo apt-get -y install libsqlite3-dev
 
 git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
 git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build

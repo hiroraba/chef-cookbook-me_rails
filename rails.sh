@@ -26,8 +26,7 @@ wget http://rubyforge.org/frs/download.php/76729/rubygems-1.8.25.tgz
 tar xzf rubygems-1.8.25.tgz
 cd rubygems-1.8.25
 ruby setup.rb
-cd ~
+cd ../
 gem install bundler
-source .bash_profile
 cd Her
 ~/.rbenv/versions/1.9.3-p125/bin/bundle install

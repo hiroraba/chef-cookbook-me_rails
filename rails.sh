@@ -30,6 +30,7 @@ cd rubygems-1.8.25
 ruby setup.rb
 cd ../
 gem install bundler
+rbenv rehash
 cd Her
 bundle install
 bundle exec rake db:migrate

@@ -30,4 +30,4 @@ cd ~
 gem install bundler
 source .bash_profile
 cd Her
-bundle install
+~/.rbenv/versions/1.9.3-p125/bin/bundle install

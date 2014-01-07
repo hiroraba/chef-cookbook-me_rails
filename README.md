@@ -1,4 +1,4 @@
-chef-cookbook-me_rails
+vagrant_rails
 ======================
 
-chef-cookbook-me_rails
+vagrant_rails

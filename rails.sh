@@ -30,4 +30,5 @@ cd ../
 gem install bundler
 cd Her
 bundle install
+bundle exec rake db:migrate
 bundle exec rspec spec

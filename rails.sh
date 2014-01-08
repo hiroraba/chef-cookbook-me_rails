@@ -35,4 +35,5 @@ rbenv rehash
 cd Her
 bundle install
 bundle exec rake db:migrate
+bundle exec rake db:migrate RAILS_ENV=test
 bundle exec rspec spec

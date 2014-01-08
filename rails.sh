@@ -14,7 +14,7 @@ sudo apt-get -y install libsqlite3-dev
 
 git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
 git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-git clone git://github.com/hiroraba/Her.git
+
 echo 'export RBENV_ROOT="$HOME/.rbenv"' >> ~/.bash_profile
 echo 'export PATH="$RBENV_ROOT/bin:$PATH"' >> ~/.bash_profile
 echo 'export PATH="$RBENV_ROOT/shims:$PATH"' >> ~/.bash_profile
@@ -32,7 +32,7 @@ ruby setup.rb
 cd ../
 gem install bundler
 rbenv rehash
-cd Her
+cd workspace
 bundle install
 bundle exec rake db:migrate
 bundle exec rake db:migrate RAILS_ENV=test
